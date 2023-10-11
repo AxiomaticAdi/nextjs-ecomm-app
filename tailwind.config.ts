@@ -1,14 +1,15 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-	content: [
-		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-		"./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-	],
-	plugins: [require("daisyui")],
-	daisyui: {
-		themes: ["halloween", "dark"],
-	},
+    content: [
+        "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+        "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+        "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    ],
+    plugins: [require("daisyui")],
+    daisyui: {
+        base: true,
+        themes: ["halloween"],
+    },
 };
 export default config;

@@ -1,4 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+    // Below allows
+    images: {
+        remotePatterns: [{ hostname: "images.unsplash.com" }],
+    },
 
-module.exports = nextConfig
+    experimental: {
+        // Below allows experimental server features
+        serverActions: true,
+    },
+};
+
+module.exports = nextConfig;
