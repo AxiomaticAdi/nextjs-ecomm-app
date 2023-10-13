@@ -1,6 +1,7 @@
 import { Product } from "@prisma/client";
 import Link from "next/link";
 import Image from "next/image";
+import AddToCartButton from "./AddToCartButton";
 
 interface ProductCardProps {
     product: Product;
@@ -23,7 +24,11 @@ export default function ProductCard({ product }: ProductCardProps) {
             </figure>
             <div className="card-body flex flex-col justify-evenly align-middle">
                 <h2 className="card-title self-center">{product.name}</h2>
-                <button className="btn btn-secondary">{`$ ${product.price}`}</button>
+                <AddToCartButton
+                    productId={product.id}
+                    price={product.price}
+                    isPrimaryColor={false}
+                />
             </div>
         </Link>
     );
