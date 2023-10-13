@@ -23,7 +23,6 @@ export default function ProductCard({ product }: ProductCardProps) {
             </figure>
             <div className="card-body flex flex-col justify-evenly align-middle">
                 <h2 className="card-title self-center">{product.name}</h2>
-                <p>{product.description}</p>
                 <button className="btn btn-secondary">{`$ ${product.price}`}</button>
             </div>
         </Link>

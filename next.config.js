@@ -2,7 +2,12 @@
 const nextConfig = {
     // Below allows
     images: {
-        remotePatterns: [{ hostname: "images.unsplash.com" }],
+        remotePatterns: [
+            { hostname: "images.unsplash.com" },
+            { hostname: "images.pexels.com" },
+            { hostname: "blog.homesalive.ca" },
+            { hostname: "i.ibb.co" },
+        ],
     },
 
     experimental: {
