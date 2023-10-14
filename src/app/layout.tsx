@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,10 +19,12 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={inter.className}>
+            <body className={`h-screen ${inter.className} flex flex-col`}>
                 <NavBar />
                 <main className="m-auto max-w-7xl p-4">{children}</main>
                 <Analytics />
+                <div className="flex-grow"></div>
+                <Footer />
             </body>
         </html>
     );
