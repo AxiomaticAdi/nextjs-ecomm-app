@@ -1,3 +1,4 @@
+import NavBar from "@/components/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -17,6 +18,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={inter.className}>
+                <NavBar />
                 <main className="m-auto max-w-7xl p-4">{children}</main>
             </body>
         </html>
