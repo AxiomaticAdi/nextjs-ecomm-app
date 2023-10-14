@@ -1,0 +1,52 @@
+{
+  "pages": {
+    "/not-found": [
+      "static/chunks/webpack-295611c79fbba6dc.js",
+      "static/chunks/bf6a786c-326d7e39e945965e.js",
+      "static/chunks/26-d877b5035f469ce7.js",
+      "static/chunks/main-app-d984c170369ffa1c.js",
+      "static/chunks/app/not-found-e4fdb0a93f9d22cd.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-295611c79fbba6dc.js",
+      "static/chunks/bf6a786c-326d7e39e945965e.js",
+      "static/chunks/26-d877b5035f469ce7.js",
+      "static/chunks/main-app-d984c170369ffa1c.js",
+      "static/chunks/964-d96df7de78e0be8e.js",
+      "static/chunks/724-b17c80fe34fbd9db.js",
+      "static/css/a4ca7330205af7ef.css",
+      "static/chunks/app/layout-e5c6e9c2b90ee18d.js"
+    ],
+    "/loading": [
+      "static/chunks/webpack-295611c79fbba6dc.js",
+      "static/chunks/bf6a786c-326d7e39e945965e.js",
+      "static/chunks/26-d877b5035f469ce7.js",
+      "static/chunks/main-app-d984c170369ffa1c.js",
+      "static/chunks/app/loading-d2a560e1a8e1c5b8.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-295611c79fbba6dc.js",
+      "static/chunks/bf6a786c-326d7e39e945965e.js",
+      "static/chunks/26-d877b5035f469ce7.js",
+      "static/chunks/main-app-d984c170369ffa1c.js",
+      "static/chunks/964-d96df7de78e0be8e.js",
+      "static/chunks/724-b17c80fe34fbd9db.js",
+      "static/chunks/app/page-36d8d70644fd6f10.js"
+    ],
+    "/products/[id]/page": [
+      "static/chunks/webpack-295611c79fbba6dc.js",
+      "static/chunks/bf6a786c-326d7e39e945965e.js",
+      "static/chunks/26-d877b5035f469ce7.js",
+      "static/chunks/main-app-d984c170369ffa1c.js",
+      "static/chunks/964-d96df7de78e0be8e.js",
+      "static/chunks/app/products/[id]/page-cd5c1ffc91230dcb.js"
+    ],
+    "/add-product/page": [
+      "static/chunks/webpack-295611c79fbba6dc.js",
+      "static/chunks/bf6a786c-326d7e39e945965e.js",
+      "static/chunks/26-d877b5035f469ce7.js",
+      "static/chunks/main-app-d984c170369ffa1c.js",
+      "static/chunks/app/add-product/page-5f88095133ecbcc0.js"
+    ]
+  }
+}

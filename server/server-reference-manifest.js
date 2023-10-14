@@ -1,0 +1,1 @@
+self.__RSC_SERVER_MANIFEST="{\"node\":{\"addf5e2937a9d6b768b9d4f9409437b1f0965fa2\":{\"workers\":{\"app/page\":5951,\"app/products/[id]/page\":5951},\"layer\":{\"app/page\":\"rsc\",\"app/products/[id]/page\":\"rsc\"}},\"08d13b580df1d3d526b647d649b759be8498f16f\":{\"workers\":{\"app/add-product/page\":1652},\"layer\":{\"app/add-product/page\":\"rsc\"}}},\"edge\":{}}"
