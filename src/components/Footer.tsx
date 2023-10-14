@@ -2,7 +2,7 @@ import GithubLink from "./GithubLink";
 
 export default function Footer() {
     return (
-        <footer className="self-end bg-inherit p-5">
+        <footer className="bg-inherit p-5">
             <div className="footer m-auto flex max-w-7xl justify-between">
                 <div className="flex flex-col">
                     <span className="footer-title text-primary">Company</span>
