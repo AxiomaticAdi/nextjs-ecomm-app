@@ -17,7 +17,7 @@ export default async function ShoppingCartButton({
     // }
 
     return (
-        <div className="dropdown-end dropdown">
+        <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-primary">
                 <div className="indicator">
                     <CartIcon size="h-8 w-8" />

@@ -1,5 +1,4 @@
-import Link from "next/link";
-import GithubLinkWhite from "./GithubLinkWhite";
+import GithubLink from "./GithubLink";
 
 export default function Footer() {
     return (
@@ -14,14 +13,10 @@ export default function Footer() {
                         <a className="link-hover link">Press kit</a>
                     </div>
                 </div>
-                <Link
-                    className="btn btn-ghost"
-                    href="https://github.com/AxiomaticAdi/spooky-paws-ecomm"
-                >
-                    <div className="py-1">
-                        <GithubLinkWhite />
-                    </div>
-                </Link>
+                <GithubLink
+                    link="https://github.com/AxiomaticAdi/spooky-paws-ecomm"
+                    color="#FFFFFF"
+                />
                 <div className="flex flex-col">
                     <span className="footer-title self-end text-primary">
                         Legal
