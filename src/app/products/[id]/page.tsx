@@ -1,5 +1,6 @@
 import AddToCartButton from "@/components/AddToCartButton";
 import prisma from "@/lib/db/prisma";
+import { incrementProductQuantity } from "@/services/serverActions";
 import { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -55,6 +56,7 @@ export default async function ProductPage({
                     productId={product.id}
                     price={product.price}
                     isPrimaryColor={true}
+                    incrementProductQuantity={incrementProductQuantity}
                 />
                 <p className="my-6">{product.description}</p>
             </div>

@@ -33,12 +33,12 @@ model CartItem {
   id        String   @id @default(auto()) @map("_id") @db.ObjectId
   productId String   @db.ObjectId
   quantity  Int
-  cardId    String   @db.ObjectId
+  cartId    String   @db.ObjectId
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
   product Product @relation(fields: [productId], references: [id], onDelete: Cascade)
-  cart    Cart    @relation(fields: [cardId], references: [id])
+  cart    Cart    @relation(fields: [cartId], references: [id])
 
   @@map("cartitems")
 }
