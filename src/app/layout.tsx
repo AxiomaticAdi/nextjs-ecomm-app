@@ -1,3 +1,4 @@
+import NavBar from "@/components/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -5,8 +6,8 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Spooky Goods Inc.",
-    description: "Halloween Tricks and Treats!",
+    title: "Spooky Paws",
+    description: "Halloween Pet Store",
 };
 
 export default function RootLayout({
@@ -17,6 +18,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={inter.className}>
+                <NavBar />
                 <main className="m-auto max-w-7xl p-4">{children}</main>
             </body>
         </html>

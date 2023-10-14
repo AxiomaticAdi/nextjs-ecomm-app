@@ -1,7 +1,7 @@
 import prisma from "@/lib/db/prisma";
 
 export const metadata = {
-    title: "Add product - Spooky Goods Inc.",
+    title: "Add product - Spooky Paws",
 };
 
 async function addProduct(formData: FormData) {
