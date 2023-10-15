@@ -7,9 +7,5 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
     color: white;
-}
-
-body {
-    color: rgb(var(--foreground-rgb));
     background: rgb(var(--background-end-rgb));
 }
