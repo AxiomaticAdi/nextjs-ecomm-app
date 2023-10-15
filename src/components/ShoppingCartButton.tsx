@@ -21,11 +21,11 @@ export default async function ShoppingCartButton({
             </label>
             <div
                 tabIndex={0}
-                className="card dropdown-content card-compact z-30 mt-3 w-52 bg-primary shadow"
+                className="card dropdown-content card-compact z-30 mt-3 w-48 bg-base-200 shadow"
             >
-                <div className="body card">
-                    <span className="text-lg font-bold">{cart?.size || 0}</span>
-                    <span className="font-bold text-info">
+                <div className="body card m-2">
+                    <span className="text-lg">Items: {cart?.size || 0}</span>
+                    <span className="text-lg">
                         Subtotal: ${cart?.subtotal || 0}
                     </span>
                     <div className="card-actions">
