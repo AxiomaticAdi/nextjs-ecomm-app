@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import logo from "@/assets/SpookyPaws_logo.png";
 import ShoppingCartButton from "./ShoppingCartButton";
+import logo from "../assets/spooky-paws-2.png";
 import { getCart } from "@/lib/db/cart";
 
 export default async function NavBar() {
@@ -14,11 +14,9 @@ export default async function NavBar() {
                     <Link href={"/"} className="btn btn-ghost h-24">
                         <Image
                             src={logo}
-                            alt="Spooky Paws logo"
-                            width={100}
+                            alt={"Spooky Paws Logo"}
                             height={100}
                         />
-                        <h1 className="text-6xl text-black">Spooky Paws</h1>
                     </Link>
                     <ShoppingCartButton cart={currentCart} />
                 </div>

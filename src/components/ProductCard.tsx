@@ -10,7 +10,7 @@ interface ProductCardProps {
 
 export default function ProductCard({ product }: ProductCardProps) {
     return (
-        <div className="card w-96 bg-primary text-primary-content hover:brightness-110">
+        <div className="card w-96 bg-inherit text-primary-content hover:bg-primary-content">
             <Link href={"/products/" + product.id}>
                 <figure className="px-10 pt-10">
                     <Image
@@ -23,11 +23,13 @@ export default function ProductCard({ product }: ProductCardProps) {
                 </figure>
             </Link>
             <div className="card-body flex flex-col justify-evenly align-middle">
-                <h2 className="card-title self-center">{product.name}</h2>
+                <h2 className="card-title self-center text-primary">
+                    {product.name}
+                </h2>
                 <AddToCartButton
                     productId={product.id}
                     price={product.price}
-                    isPrimaryColor={false}
+                    isPrimaryColor={true}
                     incrementProductQuantity={incrementProductQuantity}
                 />
             </div>
