@@ -16,13 +16,13 @@ export default function DecrementButton({ productId }: DecrementButtonProps) {
     }
 
     return (
-        <div>
-            <button onClick={handleDecrement} style={{ fontSize: "20px" }}>
-                <MinusCircle size={32} />
-            </button>
+        <div className="flex justify-center align-middle">
             {isPending && (
                 <span className="loading loading-spinner text-primary" />
             )}
+            <button onClick={handleDecrement}>
+                <MinusCircle size={25} />
+            </button>
         </div>
     );
 }

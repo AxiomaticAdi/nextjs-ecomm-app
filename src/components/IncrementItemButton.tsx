@@ -16,9 +16,9 @@ export default function IncrementButton({ productId }: IncrementButtonProps) {
     }
 
     return (
-        <div>
-            <button onClick={handleIncrement} style={{ fontSize: "20px" }}>
-                <PlusCircle size={32} />
+        <div className="flex justify-center align-middle">
+            <button onClick={handleIncrement}>
+                <PlusCircle size={25} />
             </button>
             {isPending && (
                 <span className="loading loading-spinner text-primary" />

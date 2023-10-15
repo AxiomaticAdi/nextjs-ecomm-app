@@ -35,7 +35,9 @@ export default function CartCheckoutEntry({
                         <div>Quantity:</div>
                         <div className="flex justify-center align-middle">
                             <DecrementButton productId={product.id} />
-                            <div className="badge text-xl">{quantity}</div>
+                            <div className="badge self-center text-xl">
+                                {quantity}
+                            </div>
                             <IncrementButton productId={product.id} />
                         </div>
                     </div>
