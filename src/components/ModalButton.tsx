@@ -15,9 +15,12 @@ export default function ModalButton({
         <>
             <button
                 className="btn btn-primary"
-                onClick={() =>
-                    document.getElementById("modal_name")!.showModal()
-                }
+                onClick={() => {
+                    const modal = document.getElementById(
+                        "modal_name",
+                    ) as HTMLDialogElement;
+                    modal?.showModal();
+                }}
             >
                 {buttonText}
             </button>
