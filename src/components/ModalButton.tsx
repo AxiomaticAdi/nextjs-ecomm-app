@@ -16,7 +16,7 @@ export default function ModalButton({
             <button
                 className="btn btn-primary"
                 onClick={() =>
-                    document.getElementById("modal_name").showModal()
+                    document.getElementById("modal_name")!.showModal()
                 }
             >
                 {buttonText}
