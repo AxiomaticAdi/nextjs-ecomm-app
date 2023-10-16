@@ -6,7 +6,7 @@ const envSchema = zod.object({
     GOOGLE_CLIENT_SECRET: zod
         .string()
         .min(5, { message: "Missing zod variable" }),
-    NEXTAUTH_URL: zod.string().min(5, { message: "Missing zod variable" }),
+    NEXTAUTH_URL: zod.string(),
     NEXTAUTH_SECRET: zod.string().min(5, { message: "Missing zod variable" }),
 });
 
