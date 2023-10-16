@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import Footer from "@/components/Footer";
+import SessionProvider from "@/components/SessionProviderClient";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,11 +21,13 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={inter.className}>
-                <div className="flex flex-col">
-                    <NavBar />
-                    <main className="m-auto max-w-7xl p-4">{children}</main>
-                    <div className="flex-grow"></div>
-                    <Footer />
+                <div className="flex h-screen flex-col">
+                    <SessionProvider>
+                        <NavBar />
+                        <main className="m-auto max-w-7xl p-4">{children}</main>
+                        <div className="flex-grow"></div>
+                        <Footer />
+                    </SessionProvider>
                 </div>
                 <Analytics />
             </body>
