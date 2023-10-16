@@ -3,8 +3,12 @@ import Image from "next/image";
 import ShoppingCartButton from "./ShoppingCartButton";
 import logo from "../assets/spooky-paws-2.png";
 import { getCart } from "@/lib/db/cart";
+import UserMenuButton from "./UserMenuButton";
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 
 export default async function NavBar() {
+    const session = await getServerSession(authOptions);
     const currentCart = await getCart();
 
     return (
@@ -18,6 +22,7 @@ export default async function NavBar() {
                             height={100}
                         />
                     </Link>
+                    <UserMenuButton session={session} />
                     <ShoppingCartButton cart={currentCart} />
                 </div>
             </div>
