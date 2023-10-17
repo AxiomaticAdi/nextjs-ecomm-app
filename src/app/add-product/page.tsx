@@ -47,8 +47,8 @@ export default async function AddProductPage() {
     }
 
     return (
-        <div className="flex max-w-2xl flex-initial flex-col justify-center bg-transparent align-top">
-            <h1 className="m-4 bg-black text-center align-middle text-2xl font-bold">
+        <div className="flex max-w-2xl flex-initial flex-col justify-center align-top">
+            <h1 className="m-4 text-center align-middle text-2xl font-bold">
                 Add product
             </h1>
             <form action={addProduct} className="form-control">
