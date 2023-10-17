@@ -30,7 +30,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             <AddToCartButton
                 productId={product.id}
                 price={product.price}
-                additional_classNames="btn-outline btn-primary"
+                additional_classNames="btn-primary rounded-t-none"
                 incrementProductQuantity={incrementProductQuantity}
             />
         </div>
