@@ -20,16 +20,21 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
+            <meta
+                name="viewport"
+                content="width=device-width, initial-scale=1.0"
+            />
             <SessionProvider>
                 <body className={inter.className}>
-                    <div className="flex flex-col bg-base-100">
+                    <div className="flex min-h-screen flex-col bg-base-100">
                         <div className="mb-4">
                             <NavBar />
                         </div>
-                        <main className="box-border self-center bg-base-100">
+                        <main className="box-border self-center">
                             {children}
                         </main>
-                        <div className="flex-grow bg-base-100"></div>
+                        <div className="flex-grow"></div>
+                        <div className="divider"></div>
                         <Footer />
                     </div>
                     <Analytics />
