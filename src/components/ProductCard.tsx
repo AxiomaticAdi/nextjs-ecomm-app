@@ -10,18 +10,19 @@ interface ProductCardProps {
 
 export default function ProductCard({ product }: ProductCardProps) {
     return (
-        <div className="card w-96 bg-inherit text-primary-content hover:bg-primary-content">
-            <Link href={"/products/" + product.id}>
-                <figure className="px-10 pt-10">
-                    <Image
-                        src={product.imageUrl}
-                        alt={product.name}
-                        width={800} // Represents max dimensions of picture
-                        height={400}
-                        className="rounded object-cover"
-                    />
-                </figure>
-            </Link>
+        <Link
+            href={"/products/" + product.id}
+            className="card w-96 bg-inherit text-primary-content hover:bg-base-300 hover:drop-shadow-lg"
+        >
+            <figure>
+                <Image
+                    src={product.imageUrl}
+                    alt={product.name}
+                    width={800} // Represents max dimensions of picture
+                    height={400}
+                    className="rounded object-cover"
+                />
+            </figure>
             <div className="card-body flex flex-col justify-evenly align-middle">
                 <h2 className="card-title self-center text-primary">
                     {product.name}
@@ -33,6 +34,6 @@ export default function ProductCard({ product }: ProductCardProps) {
                     incrementProductQuantity={incrementProductQuantity}
                 />
             </div>
-        </div>
+        </Link>
     );
 }
