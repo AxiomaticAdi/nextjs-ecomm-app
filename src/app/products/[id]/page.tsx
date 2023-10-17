@@ -54,7 +54,6 @@ export default async function ProductPage({
                 <AddToCartButton
                     productId={product.id}
                     price={product.price}
-                    isPrimaryColor={true}
                     incrementProductQuantity={incrementProductQuantity}
                 />
                 <p className="my-6">{product.description}</p>
