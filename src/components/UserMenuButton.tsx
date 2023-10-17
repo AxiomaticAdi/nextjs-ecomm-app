@@ -15,7 +15,7 @@ export default function UserMenuButton({ session }: UserMenuButtonProps) {
 
     return (
         <div className="dropdown dropdown-end">
-            <button className="btn btn-circle btn-ghost">
+            <button className="btn btn-circle btn-primary">
                 {user ? (
                     <Image
                         src={user?.image || profilePicPlaceholder}
@@ -25,7 +25,7 @@ export default function UserMenuButton({ session }: UserMenuButtonProps) {
                         className="w-10 rounded-full"
                     />
                 ) : (
-                    <DotsThreeCircle size={32} color="black" />
+                    <DotsThreeCircle size={32} color="white" />
                 )}
             </button>
             <ul className="menu dropdown-content rounded-box z-30 bg-primary-focus">

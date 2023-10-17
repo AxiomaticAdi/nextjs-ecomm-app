@@ -15,13 +15,13 @@ export default function Footer() {
                 </div>
                 <GithubLink
                     link="https://github.com/AxiomaticAdi/spooky-paws-ecomm"
-                    color="#FFFFFF"
+                    color="var(--custom-primary)"
                 />
                 <div className="flex flex-col">
                     <span className="footer-title self-end text-primary">
                         Legal
                     </span>
-                    <div className="flex flex-wrap gap-6 text-gray-500">
+                    <div className="flex flex-wrap justify-end gap-6 text-gray-500">
                         <a className="link-hover link">Terms of use</a>
                         <a className="link-hover link">Privacy policy</a>
                         <a className="link-hover link">Cookie policy</a>

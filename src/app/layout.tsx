@@ -21,13 +21,13 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={inter.className}>
-                <div className="flex h-screen flex-col">
+                <div className="flex flex-col bg-base-100">
                     <SessionProvider>
                         <NavBar />
-                        <main className="max-w-7xl self-center p-4">
+                        <main className="max-w-7xl self-center bg-base-100 p-4">
                             {children}
                         </main>
-                        <div className="flex-grow"></div>
+                        <div className="flex-grow bg-base-100"></div>
                         <Footer />
                     </SessionProvider>
                 </div>
