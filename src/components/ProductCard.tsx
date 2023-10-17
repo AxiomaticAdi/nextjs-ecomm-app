@@ -14,11 +14,11 @@ export default function ProductCard({ product }: ProductCardProps) {
             href={"/products/" + product.id}
             className="card w-96 bg-inherit text-primary-content hover:bg-base-300 hover:drop-shadow-lg"
         >
-            <figure>
+            <figure style={{ maxHeight: "400px" }}>
                 <Image
                     src={product.imageUrl}
                     alt={product.name}
-                    width={800} // Represents max dimensions of picture
+                    width={800}
                     height={400}
                     className="rounded object-cover"
                 />

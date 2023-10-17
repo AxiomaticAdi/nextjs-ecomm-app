@@ -5,6 +5,13 @@
 :root {
     color: var(--bg-custom-primary-content);
     background: var(--bg-custom-base-100);
+    background-color: var(--bg-custom-base-100);
+}
+
+html,
+body {
+    background: var(--bg-custom-base-100);
+    background-color: var(--bg-custom-base-100);
 }
 
 /* * {

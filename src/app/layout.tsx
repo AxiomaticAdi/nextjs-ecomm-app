@@ -24,7 +24,7 @@ export default function RootLayout({
                 <div className="flex flex-col bg-base-100">
                     <SessionProvider>
                         <NavBar />
-                        <main className="max-w-7xl self-center bg-base-100 p-4">
+                        <main className="box-border self-center bg-base-100">
                             {children}
                         </main>
                         <div className="flex-grow bg-base-100"></div>
