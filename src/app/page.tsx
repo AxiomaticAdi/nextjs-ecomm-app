@@ -8,7 +8,7 @@ export default async function Home() {
 
     return (
         <div>
-            <div className="hidden md:flex md:flex-col">
+            <div className="hidden md:flex md:flex-col md:items-center">
                 <MainHero
                     loaded_products={products}
                     loaded_heroIndex={heroIndex}
