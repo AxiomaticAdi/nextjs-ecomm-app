@@ -6,14 +6,14 @@ import { useState, useTransition } from "react";
 interface AddToCartButtonProps {
     productId: string;
     price: number;
-    isPrimaryColor?: boolean;
+    additional_classNames?: string;
     incrementProductQuantity: (productId: string) => Promise<void>;
 }
 
 export default function AddToCartButton({
     productId,
     price = 0,
-    isPrimaryColor = true,
+    additional_classNames = "btn-primary",
     incrementProductQuantity,
 }: AddToCartButtonProps) {
     const [isPending, startTransition] = useTransition();
@@ -22,9 +22,7 @@ export default function AddToCartButton({
     return (
         <>
             <button
-                className={`btn ${
-                    isPrimaryColor ? "btn-primary" : "btn-secondary"
-                }`}
+                className={`btn ${additional_classNames}`}
                 onClick={() => {
                     setSuccess(false);
                     startTransition(async () => {
