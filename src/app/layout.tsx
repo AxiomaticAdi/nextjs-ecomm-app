@@ -24,7 +24,9 @@ export default function RootLayout({
                 <div className="flex h-screen flex-col">
                     <SessionProvider>
                         <NavBar />
-                        <main className="m-auto max-w-7xl p-4">{children}</main>
+                        <main className="max-w-7xl self-center p-4">
+                            {children}
+                        </main>
                         <div className="flex-grow"></div>
                         <Footer />
                     </SessionProvider>

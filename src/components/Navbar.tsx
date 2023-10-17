@@ -14,16 +14,14 @@ export default async function NavBar() {
     return (
         <div className="h-28 bg-primary">
             <div className="navbar m-auto flex max-w-7xl flex-col gap-5 sm:flex-row">
-                <div className="flex-1 justify-between">
+                <div className="w-11/12 flex-1 justify-between">
                     <Link href={"/"} className="btn btn-ghost h-24">
-                        <Image
-                            src={logo}
-                            alt={"Spooky Paws Logo"}
-                            height={100}
-                        />
+                        <h1>TEMP LOGO LOLOL</h1>
                     </Link>
-                    <UserMenuButton session={session} />
-                    <ShoppingCartButton cart={currentCart} />
+                    <div className="flex">
+                        <UserMenuButton session={session} />
+                        <ShoppingCartButton cart={currentCart} />
+                    </div>
                 </div>
             </div>
         </div>

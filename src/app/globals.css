@@ -9,3 +9,7 @@
     color: white;
     background: rgb(var(--background-end-rgb));
 }
+
+/* * {
+    outline: red solid 5px;
+} */
