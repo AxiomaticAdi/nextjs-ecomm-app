@@ -38,18 +38,17 @@ export default async function ProductPage({
     const product = await getProduct(id);
 
     return (
-        <div className="flex max-w-6xl flex-col gap-10 lg:flex-row">
+        <div className="flex max-w-5xl flex-col items-center justify-center gap-5 md:flex-row">
             <Image
                 src={product.imageUrl}
                 alt={product.name}
                 width={500}
                 height={500}
-                className="rounded"
+                className="rounded-lg"
                 priority
             />
-
-            <div className="flex flex-col">
-                <h1 className="my-6 self-center text-5xl font-bold">
+            <div className="flex flex-col items-center px-2">
+                <h1 className="my-6 text-center text-5xl font-bold">
                     {product.name}
                 </h1>
                 <AddToCartButton

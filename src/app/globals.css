@@ -12,6 +12,7 @@ html,
 body {
     background: var(--bg-custom-base-100);
     background-color: var(--bg-custom-base-100);
+    min-width: 320px;
 }
 
 /* * {
