@@ -13,7 +13,7 @@ export default async function NavBar() {
 
     return (
         <div className="box-border bg-primary">
-            <div className="navbar m-auto box-border flex min-h-[100] max-w-7xl flex-col gap-5 sm:flex-row">
+            <div className="navbar m-auto box-border flex max-w-7xl flex-col gap-5 sm:flex-row">
                 <div className="box-border w-11/12 flex-1 justify-between">
                     <Link href={"/"} className="btn btn-ghost">
                         <span className="primary-text text-white">

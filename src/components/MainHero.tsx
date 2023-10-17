@@ -36,7 +36,7 @@ export default function MainHero({
     if (!products[heroIndex]) return <div>Loading...</div>;
 
     return (
-        <div className="hero rounded-3xl text-secondary-content hover:bg-base-300 hover:drop-shadow-lg">
+        <div className="hero max-w-5xl rounded-3xl text-secondary-content hover:bg-base-300 hover:drop-shadow-lg">
             <div className="hero-content flex-col lg:flex-row">
                 <button
                     onClick={prevProduct}

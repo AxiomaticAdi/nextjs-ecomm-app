@@ -20,19 +20,21 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={inter.className}>
-                <div className="flex flex-col bg-base-100">
-                    <SessionProvider>
-                        <NavBar />
+            <SessionProvider>
+                <body className={inter.className}>
+                    <div className="flex flex-col bg-base-100">
+                        <div className="mb-4">
+                            <NavBar />
+                        </div>
                         <main className="box-border self-center bg-base-100">
                             {children}
                         </main>
                         <div className="flex-grow bg-base-100"></div>
                         <Footer />
-                    </SessionProvider>
-                </div>
-                <Analytics />
-            </body>
+                    </div>
+                    <Analytics />
+                </body>
+            </SessionProvider>
         </html>
     );
 }
