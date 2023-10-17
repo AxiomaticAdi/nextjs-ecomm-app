@@ -1,3 +1,4 @@
+import MainCarousel from "@/components/MainCarousel";
 import MainHero from "@/components/MainHero";
 import ProductCard from "@/components/ProductCard";
 import prisma from "@/lib/db/prisma";
@@ -8,7 +9,7 @@ export default async function Home() {
 
     return (
         <div>
-            <MainHero />
+            <MainHero loaded_products={products} loaded_heroIndex={heroIndex} />
             <div className="flex flex-wrap justify-evenly gap-8 align-middle">
                 {products.slice(0, heroIndex).map((product) => (
                     <ProductCard product={product} key={product.id} />
