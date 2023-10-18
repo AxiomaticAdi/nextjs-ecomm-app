@@ -50,7 +50,7 @@ export default function MainHero({
                     width={400}
                     height={800}
                     priority
-                    className="rounded"
+                    className="rounded-lg"
                 />
                 <div>
                     <h1 className="text-5xl font-bold">
