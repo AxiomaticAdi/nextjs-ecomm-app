@@ -12,26 +12,20 @@ export default async function NavBar() {
     const currentCart = await getCart();
 
     return (
-        <div className="box-border bg-primary">
-            <div className="navbar m-auto box-border flex max-w-7xl flex-col gap-5 sm:flex-row">
-                <div className="box-border w-11/12 flex-1 justify-between">
-                    <Link href={"/"} className="btn btn-ghost">
-                        <span className="primary-text text-white">
-                            TEMP LOGO
-                        </span>
-                        {/* <Image
+        <div className="navbar box-border flex max-w-7xl justify-between gap-5 bg-primary sm:flex-row">
+            <Link href={"/"} className="btn btn-ghost">
+                <span className="primary-text text-white">TEMP LOGO</span>
+                {/* <Image
                             src={logo}
                             alt={"Spooky Paws Logo"}
                             height={100}
                             className="object-scale-down"
                         /> */}
-                    </Link>
+            </Link>
 
-                    <div className="flex">
-                        <UserMenuButton session={session} />
-                        <ShoppingCartButton cart={currentCart} />
-                    </div>
-                </div>
+            <div className="flex">
+                <UserMenuButton session={session} />
+                <ShoppingCartButton cart={currentCart} />
             </div>
         </div>
     );

@@ -27,7 +27,7 @@ export default function RootLayout({
             <SessionProvider>
                 <body className={inter.className}>
                     <div className="flex min-h-screen flex-col bg-base-100">
-                        <div className="mb-4">
+                        <div className="mb-4 flex justify-center bg-primary">
                             <NavBar />
                         </div>
                         <main className="box-border self-center">
