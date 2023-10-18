@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Product } from "@prisma/client";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface MainHeroProps {
     loaded_products: Product[];
@@ -37,40 +38,47 @@ export default function MainHero({
 
     return (
         <div className="hero max-w-5xl rounded-3xl text-secondary-content hover:bg-base-300 hover:drop-shadow-lg">
-            <div className="hero-content flex-col lg:flex-row">
-                <button
-                    onClick={prevProduct}
-                    className="btn btn-circle btn-primary"
-                >
-                    ❮
-                </button>
-                <Image
-                    src={products[heroIndex].imageUrl}
-                    alt={products[heroIndex].name}
-                    width={400}
-                    height={800}
-                    priority
-                    className="rounded-lg"
-                />
-                <div>
-                    <h1 className="text-5xl font-bold">
-                        {products[heroIndex].name}
-                    </h1>
-                    <p className="py-6">{products[heroIndex].description}</p>
-                    <Link
-                        href={"/products/" + products[heroIndex].id}
-                        className="btn btn-primary"
+            <AnimatePresence initial={false}>
+                <div className="hero-content flex-col lg:flex-row">
+                    <button
+                        onClick={prevProduct}
+                        className="btn btn-circle btn-primary"
                     >
-                        Explore!
-                    </Link>
+                        ❮
+                    </button>
+                    <motion.img
+                        key={heroIndex}
+                        src={products[heroIndex].imageUrl}
+                        alt={products[heroIndex].name}
+                        width={400}
+                        height={800}
+                        initial={{ x: 300, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        exit={{ x: -300, opacity: 0 }}
+                        className="rounded-lg"
+                    />
+                    <div>
+                        <h1 className="text-5xl font-bold">
+                            {products[heroIndex].name}
+                        </h1>
+                        <p className="py-6">
+                            {products[heroIndex].description}
+                        </p>
+                        <Link
+                            href={"/products/" + products[heroIndex].id}
+                            className="btn btn-primary"
+                        >
+                            Explore!
+                        </Link>
+                    </div>
+                    <button
+                        onClick={nextProduct}
+                        className="btn btn-circle btn-primary"
+                    >
+                        ❯
+                    </button>
                 </div>
-                <button
-                    onClick={nextProduct}
-                    className="btn btn-circle btn-primary"
-                >
-                    ❯
-                </button>
-            </div>
+            </AnimatePresence>
         </div>
     );
 }
