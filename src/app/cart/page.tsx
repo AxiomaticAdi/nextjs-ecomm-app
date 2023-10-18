@@ -7,7 +7,7 @@ export default async function CartPage() {
     const cart = await getCart();
 
     const checkoutText =
-        "We hope you enjoyed browsing our spook-tacular pet costumes. This site was created as a project to further study web development. Checkout functionality has been disabled, so no real transactions will occur. Thanks for your support!";
+        "We hope you enjoyed browsing our spook-tacular pet costumes. This site was created as a project to further study web development. Checkout functionality is disabled, so no real transactions will occur. Thanks for your support!";
 
     return (
         <div>
