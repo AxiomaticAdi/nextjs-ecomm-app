@@ -10,7 +10,7 @@ interface ProductCardProps {
 
 export default function ProductCard({ product }: ProductCardProps) {
     return (
-        <div className="card w-96 bg-inherit text-primary-content hover:bg-base-300 hover:drop-shadow-lg md:hover:scale-105">
+        <div className="card w-96 border bg-base-200 text-primary-content hover:bg-base-300 hover:drop-shadow-lg md:hover:scale-105">
             <Link href={"/products/" + product.id} className="">
                 <figure className="rounded-t-lg" style={{ maxHeight: "400px" }}>
                     <Image

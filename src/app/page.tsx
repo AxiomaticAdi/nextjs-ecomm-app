@@ -14,7 +14,7 @@ export default async function Home() {
                     loaded_heroIndex={heroIndex}
                 />
             </div>
-            <div className="py-8 text-center text-2xl font-extrabold">
+            <div className="py-8 text-center text-4xl font-extrabold">
                 All products
             </div>
             <div className="flex flex-wrap justify-evenly gap-8 align-middle">
