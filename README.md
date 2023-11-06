@@ -1,6 +1,6 @@
 # Spooky Paws
 
-Welcome to [Spooky Paws](https://spooky-paws-ecomm.vercel.app/) - a whimsical e-commerce store that specializes in Halloween costumes for furry friends.
+[Spooky Paws](https://spooky-paws-ecomm.vercel.app/) is a whimsical e-commerce store that specializes in Halloween costumes for furry friends.
 
 ## Objective
 
